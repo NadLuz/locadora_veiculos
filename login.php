@@ -52,10 +52,8 @@
                         <label for="password" class="form-label">
                             Senha:
                         </label>
-                        <input type="password" name="password" class="form-control" id="password" required>
-                        <span class="password-toggle mt-3" onclick="togglePassword()">
-                            <i class="bi bi-eye"></i>
-                        </span>
+                        <input type="password" name="password" id="password" class="form-control" required>
+                        <span class="password-toggle mt-3" onclick="togglePassword()"><i class="bi bi-eye"></i></span>
                     </div>
 
                     <button type="submit" class="btn btn-warning w-100">Entrar</button>
@@ -65,7 +63,7 @@
     </div>
     
     <script>
-        fuction togglePassword(){
+        function togglePassword() {
             let passwordInput = document.getElementById('password');
             passwordInput.type = (passwordInput.type === 'password') ? 'text' : 'password';
         }
